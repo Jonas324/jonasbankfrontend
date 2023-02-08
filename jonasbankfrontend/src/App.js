@@ -1,25 +1,30 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import React, {useState} from "react";
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Welcome from './Directory/Welcome'
+import Register from './Directory/Register';
+import Login from './Directory/Login';
+import User from './Directory/User';
+import Payment from './Directory/Payment';
+import Transaction from './Directory/Transaction';
 
 function App() {
-  const [user, setUser] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8082/user/1")
-      .then((response) => response.json())
-      .then((data) => setUser(data));
-  }, []);
-  console.log(user);
 
   return (
-    <div className="App">
-      <h1>Jonas Bank app</h1>
-      <div className="chatwindow">
-        <p>username: {user.username}</p>
-        <p>user ID: {user.id}</p>
-        <p>credit: {user.credit}</p>
+    
+    <Router>
+      <div className="App">
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Welcome />}/>
+            <Route path="/register" element={<Register/>}/>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/user" element={<User />}/>
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/transaction" element={<Transaction />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 export default App;
