@@ -6,6 +6,7 @@ import Login from './Directory/Login';
 import User from './Directory/User';
 import Payment from './Directory/Payment';
 import Transaction from './Directory/Transaction';
+import UpdateUser from './Directory/UpdateUser';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/user" element={<User />}/>
             <Route path="/payment" element={<Payment />} />
             <Route path="/transaction" element={<Transaction />} />
+            <Route path="/updateUser" element={<UpdateUser />} />
           </Routes>
         </div>
       </div>

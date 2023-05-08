@@ -49,6 +49,10 @@ function UserData() {
     </button>
 
     <button>
+      <a href="/updateUser">Update user</a>
+    </button>
+
+    <button>
     <a href="/deleteUser">Delete user</a>
     </button>
 
