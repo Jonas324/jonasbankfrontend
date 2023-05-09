@@ -60,7 +60,7 @@ function UpdateUser() {
           <label className="buttonSelect">
             <button className="updatelink" type="submit">Update account</button>
             <input
-              className="input"
+              className="updateinput"
               type="text"
               name="Username"
               placeholder="Username"

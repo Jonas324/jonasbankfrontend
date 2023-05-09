@@ -65,7 +65,7 @@ function Transaction() {
               Send credit
             </button>
               <input
-              className="input"
+              className="transactioninput"
                 type="text"
                 name="name"
                 onChange={(e) => setContent(e.target.value)}
