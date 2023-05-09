@@ -6,8 +6,8 @@
     align-items: center;
     background-color: darkgray;
     color: white;
-    height: 50vh;
-    width: 50vh;
+    height: 500px;
+    width: 400px;
     border-radius: 30px;
     border: 2px solid rgb(124, 123, 123);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -33,23 +33,30 @@
     background-color: rgb(226, 223, 223);
 }
 
-.link {
-    display: flex;
-    flex-direction: column;
+button {
     text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+.link1 {
+    display: flex;
     border: 1px solid white ;
     background-color: grey;
     border-radius: 10px;
     margin-top: 3em;
-    color: aliceblue;
+    color: white;
     text-decoration: none;
     font-size: 24px;
-    width: 220px;
     cursor: pointer;
-    padding: .2em 0;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    justify-content: center;
 }
 
-.link:hover {
+.link1:hover {
     background-color: rgb(94, 94, 94);
 }
 

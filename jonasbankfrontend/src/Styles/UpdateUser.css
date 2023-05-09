@@ -1,0 +1,97 @@
+.updateUser {
+    margin-top: 10%;
+    margin-left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgray;
+    color: aliceblue;
+    height: 450px;
+    text-align: center;
+    width: 500px;
+    border-radius: 30px;
+    border: 2px solid rgb(124, 123, 123);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    border-radius: 30px 30px 0 0;
+    margin-top: 0;
+    padding-top: 1em;
+    height: 2.5em;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(124, 123, 123);
+}
+
+p {
+    font-size: 20px;
+    width: 310px;
+    padding-left: .6em;
+}
+
+.buttonSelect {
+    display: flex;
+    flex-direction: row;
+}
+
+.updatelink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white ;
+    background-color: grey;
+    border-radius: 10px 0 0 10px;
+    margin-top: 1em;
+    color: aliceblue;
+    padding: .2em 1em;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+    justify-content: center;
+}
+
+.select:hover, .link:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+.input {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 0 10px 10px 0;
+    color: black;
+    height: 40px;
+    border: 1px solid white;
+    background-color: white;
+    cursor: text;
+}
+
+.userlink {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid white ;
+    background-color: grey;
+    border-radius: 10px;
+    margin-top: 1em;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 24px;
+    width: 220px;
+    cursor: pointer;
+    padding: .2em 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.userlink:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+#oops {
+    color: rgb(208, 50, 50);
+    font-size: 16px;
+}

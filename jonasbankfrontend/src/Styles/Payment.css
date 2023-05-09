@@ -1,4 +1,4 @@
-.welcome {
+.payment {
     margin-top: 10%;
     margin-left: 35%;
     display: flex;
@@ -6,8 +6,8 @@
     align-items: center;
     background-color: darkgray;
     color: aliceblue;
-    height: 500px;
-    width: 400px;
+    height: 450px;
+    width: 500px;
     border-radius: 30px;
     border: 2px solid rgb(124, 123, 123);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -23,21 +23,46 @@ h1 {
     background-color: rgb(124, 123, 123);
 }
 
-.link {
+p {
+    font-size: 20px;
+    width: 310px;
+    padding-left: .6em;
+}
+
+.buttonSelect {
+    display: flex;
+    flex-direction: row;
+}
+
+.paymentlink {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     border: 1px solid white ;
     background-color: grey;
-    border-radius: 10px;
-    margin-top: 3em;
+    border-radius: 10px 0 0 10px;
+    margin-top: 1em;
     color: aliceblue;
     padding: .2em 1em;
     text-decoration: none;
-    font-size: 24px;
-    width: 250px;
+    font-size: 20px;
+    width: 200px;
+    justify-content: center;
 }
 
-.link:hover {
+.select:hover, .link:hover {
     background-color: rgb(94, 94, 94);
+}
+
+.select {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 0 10px 10px 0;
+    color: aliceblue;
+    height: 40px;
+    border: 1px solid white;
+    background-color: grey;
+    cursor: pointer;
 }

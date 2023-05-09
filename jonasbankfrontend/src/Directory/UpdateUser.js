@@ -1,4 +1,6 @@
 import { useState } from "react";
+import styles from "../Styles/UpdateUser.css";
+
 
 function UpdateUser() {
   const [username, setUsername] = useState("");
@@ -50,22 +52,26 @@ function UpdateUser() {
   }
 
   return (
-    <div className="App">
+    <div className="updateUser">
       <h1>Update your account</h1>
       <div className="chatinput">
         <form onSubmit={handleSubmit}>
-          <label>
-            <p>Write new name for your account</p>
+          <p>Write new name for your account</p>
+          <label className="buttonSelect">
+            <button className="updatelink" type="submit">Update account</button>
             <input
+              className="input"
               type="text"
               name="Username"
               placeholder="Username"
               onChange={(e) => setUsername(e.target.value)}
             />
           </label>
-          <button type="submit">Update account</button>
-          <p>After you update you need to logout and then login to your acount</p>
+          <p id="oops">Oops! After you update you need to logout and then login to your acount</p>
         </form>
+        <button className="userlink">
+          <a href="/User">User page</a>
+        </button>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import styles from "../Styles/Transaction.css";
 
 function Transaction() {
   const [content, setContent] = useState("");
@@ -41,12 +42,11 @@ function Transaction() {
     };
 
     if (content > userCredit) {
-      setNoMoney(true)
-    } else if (content <= 0){
-      setCantSend(true)
-    } 
-    else {
-      setNoMoney(false)
+      setNoMoney(true);
+    } else if (content <= 0) {
+      setCantSend(true);
+    } else {
+      setNoMoney(false);
       fetch("http://localhost:8082/transaction", requestOptions)
         .then((response) => response.json())
         .catch((error) => console.error(error));
@@ -56,22 +56,28 @@ function Transaction() {
   }
 
   return (
-    <div className="App">
+    <div className="transaction">
       <h1>New Transaction</h1>
       <div className="chatinput">
         <form onSubmit={handleSubmit}>
-          <label>
-            <input
-              type="text"
-              name="name"
-              onChange={(e) => setContent(e.target.value)}
-            />
-          </label>
-          <button type="submit">Send credit</button>
+          <div className="buttonSelect">
+            <button className="transactionlink" type="submit">
+              Send credit
+            </button>
+              <input
+              className="input"
+                type="text"
+                name="name"
+                onChange={(e) => setContent(e.target.value)}
+              />
+          </div>
+          {noMoney && <p id="error">Not enough money to send. sorry!</p>}
+          {cantSend && <p id="error">You can't send 0 or negative credit. Nice try hacker!</p>}
         </form>
+        <button className="userlink">
+          <a href="/User">User page</a>
+        </button>
       </div>
-      {noMoney && <p>Not enough money to send. sorry!</p>}
-      {cantSend && <p>You can't send negative credit. Nice try hacker!</p>}
     </div>
   );
 }

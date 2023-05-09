@@ -61,9 +61,10 @@ function Login(props) {
             type="password"
             placeholder="*******"
           />
-          <button className="link" type="submit">Logga in</button>
+          <button className="link1" type="submit">Login</button>
+          <a className="link1" href="/register">Register</a>
         </form>
-        <a className="link" href="/register">Register</a>
+        
       </div>
     </>
   );
