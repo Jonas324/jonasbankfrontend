@@ -45,7 +45,9 @@ function Login(props) {
     <>
       <div className="login">
         <form className="form" onSubmit={handleSubmit}>
-          <label className="label" htmlFor="username">Username</label>
+          <label className="label" htmlFor="username">
+            Username
+          </label>
           <input
             className="input"
             value={username}
@@ -53,18 +55,24 @@ function Login(props) {
             type="username"
             placeholder="your username"
           />
-          <label className="label" htmlFor="password">Password</label>
+          <label className="label" htmlFor="password">
+            Password
+          </label>
           <input
-          className="input"
+            className="input"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             placeholder="*******"
           />
-          <button className="link1" type="submit">Login</button>
-          <a className="link1" href="/register">Register</a>
+          <button className="loginlink" type="submit">
+            Login
+          </button>
+          <p className="registertext">Don't have an account?</p>
+          <a className="loginlink" href="/register">
+            Register
+          </a>
         </form>
-        
       </div>
     </>
   );

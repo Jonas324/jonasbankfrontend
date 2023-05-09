@@ -41,7 +41,7 @@ button {
     text-align: center;
 }
 
-.link1 {
+.loginlink {
     display: flex;
     border: 1px solid white ;
     background-color: grey;
@@ -54,9 +54,10 @@ button {
     padding-top: .2em;
     padding-bottom: .2em;
     justify-content: center;
+    width: 221px;
 }
 
-.link1:hover {
+.loginlink:hover {
     background-color: rgb(94, 94, 94);
 }
 

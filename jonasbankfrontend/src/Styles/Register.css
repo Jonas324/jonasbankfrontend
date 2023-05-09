@@ -16,11 +16,13 @@
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .label {
     margin-top: 1em;
     font-size: 24px;
+    width: 221px;
 }
 
 .input {
@@ -33,27 +35,37 @@
     background-color: rgb(226, 223, 223);
 }
 
-.link {
-    display: flex;
-    flex-direction: column;
+button {
     text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+.registerlink {
+    display: flex;
     border: 1px solid white ;
     background-color: grey;
     border-radius: 10px;
     margin-top: 3em;
-    color: aliceblue;
+    color: white;
     text-decoration: none;
     font-size: 24px;
-    width: 220px;
     cursor: pointer;
-    padding: .2em 0;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    justify-content: center;
+    width: 221px;
 }
 
-.link:hover {
+.regiaterlink:hover {
     background-color: rgb(94, 94, 94);
 }
 
-.text {
-    margin-top: 3em;
-    margin-bottom: -4em;
+.registertext {
+    margin-top: 2em;
+    margin-bottom: -3.5em;
+    margin-left: 25px;
+    width: 251px;
 }

@@ -69,11 +69,11 @@ function Register(props) {
             type="password"
             placeholder="*******"
           />
-          <button className="link" type="submit">
+          <button className="registerlink" type="submit">
             Register User
           </button>
-          <p className="text">Already have an account?</p>
-          <a className="link" href="/login">
+          <p className="registertext">Already have an account?</p>
+          <a className="registerlink" href="/login">
             Login
           </a>
         </form>
